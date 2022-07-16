@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <head>
     <title>Resume</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+    </style>
+    <script>
+        function skill(n){
+            let per=prompt("enter the value");
+            if(n==0){
+                document.getElementById("skl").value=per;
+            }else if(n==1){
+                document.getElementById("skl1").value=per;
+            }else if(n==2){
+                document.getElementById("skl2").value=per;
+            }else{
+                document.getElementById("skl3").value=per;
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>RESUME</h1>
-    <p><b>PERSONAL INFORMATION:</b></p>
+    <h1 style="text-align:center; color:red;">RESUME</h1>
+    <p><b>PersonalDetails:</b></p>
     <form id="frm" >
-        NAME:<p>Ponduri Chandra Prakash Babu</p>
-        
-
+        Name:<input  type="text" placeholder="enter name">
+        Email:<input type="text" placeholder="enter the mail">
+        Address:<textarea name="adress" rows="4" cols="10"></textarea>
     </form>
+    <p><b>Education:</b></p>
+    <table id="tbl">
+        <th>CLASS</th>
+        <th>INSTITUTE</th>
+        <th>YEAR</th>
+        <th>PERCENTAGE</th>
+        <tr>
+            <td><input type="text" ></td>
+            <td><input type=text></td>
+            <td><input type=number></td>
+            <td><input type=number></td>
+        </tr>
+        <tr>
+            <td><input type="text" ></td>
+            <td><input type=text></td>
+            <td><input type=number></td>
+            <td><input type=number></td>
+        </tr>
+        <tr>
+            <td><input type="text" ></td>
+            <td><input type=text></td>
+            <td><input type=number></td>
+            <td><input type=number></td>
+        </tr>
+    </table>
+    <p><b>SKILLS:</b></p>
+    <textarea name="skills" rows="6" cols="50"></textarea>
+    <p><b>HABBITS:</b></p>
+    <textarea name="skills" rows="6" cols="50"></textarea>
+    <p><b>EXTRA CURRICULAR ACTIVITIES:</b></p>
+    <textarea name="skills" rows="6" cols="50"></textarea>
+    <p><b>COURSES:</b></p>
+    <textarea name="skills" rows="6" cols="50"></textarea>
+    <p><b>CERTIFICATES</b></p>
+    <input type="file" name="upload" id="file1"><input type="text">
+    <input type="file" name="upload" id="file1"><input type="text">
+    <input type="file" name="upload" id="file1"><input type="text">
+    <input type="file" name="upload" id="file1"><input type="text">
+    <p><b>SKILLS:</b></p>
+    <input type="text"><progress id="skl" max = "100" value="40" onclick="skill(0)"></progress><br>
+    <input  type="text"><progress id="skl1" max = "100" value="40" onclick="skill(1)"></progress><br>
+    <input  type="text"><progress id="skl2" max = "100" value="40" onclick="skill(2)"></progress><br>
+    <input type="text"><progress id="skl3" max = "100" value="40" onclick="skill(3)"></progress>
+    <p><b>DEClARATION:</b></p>
+    <textarea rows="3" cols="100"></textarea>
+
+
+
+
 </body>
