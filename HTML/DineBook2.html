@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineBooking</title>
+    <style>
+        #tbl{
+            align-items: center;
+            border: 1px solid red;
+            text-align: center;
+            margin-left:20%;
+            margin-top: 20%;
+            padding: 5%;
+        }
+        h1{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        body{
+            padding:5%;
+            color: green;
+            background-color: yellow;
+        }
+        tr,td{
+            padding: 5%;
+        }
+    </style>
+</head>
+<body >
+    <h1>DiningBooking</h1>
+    <table id="tbl">
+        <tr>
+            <td>VisitorName:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Number of Members:</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Contact No:</td>
+            <td><input type="tel"></td>
+        </tr>
+        <tr>
+            <td>Type of Food</td>
+            <td><input type="checkbox" >SouthIndian <input type="checkbox" >NorthIndian<input type="checkbox" >Chinees <input type="checkbox" >Western</td>
+        </tr>
+        <tr>
+            <td>Room Status:</td>
+            <td><input type="radio" name="rad">AC <input type="radio" name="rad">NonAC</td>
+        </tr>
+        <tr>
+            <td>VenuPrefernce:</td>
+            <td><select><option>Arena</option><option>Fiesta</option><option>Vista</option><option>Mythri</option><option>Magna</option><option>Oasis</option><option>Amoeba</option></select></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Book"></td>
+            <td><input type="reset" ></td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
