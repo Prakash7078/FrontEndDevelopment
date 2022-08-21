@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers</title>
+    <style>
+        .head {
+            background-color: aqua;
+            height:60px;
+            font-size: 10px;
+        }
+        p{
+            background-color: antiquewhite;
+            margin-left: 80px;
+        }
+        .con1{
+            position: absolute;
+            top:20px;
+            width:50%;
+            height:20px;
+            padding: 5px;
+        }
+        .sec{
+            background-color: palevioletred;
+            margin-left: 10px;
+        }
+        .foot{
+            background-color: aqua;
+        }
+        .container{
+            margin:30px 30% 40% 30%;
+            display: grid;
+        }
+        #p2{
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        #p3{
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="head">
+        <h1>Header</h1>
+        <div class="con1"><p id="p1">Content1</p></div>
+       </div>
+       <section class="sec">
+        <h2>Content</h2>
+        <p id="p2">Content2</p>
+        <p id="p3">Content3</p>
+       </section>
+       <footer class="foot">
+        <h3>Footer</h3>
+       </footer>
+
+    </div>
+
+</body>
+</html>

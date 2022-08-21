@@ -1,0 +1,14 @@
+.content-small{
+    border: 0.2em solid blue;
+    position: absolute;
+    width:300px;
+    padding:20px;
+    height:150px;
+}
+
+.overflow-content{
+    overflow-y:scroll;
+    overflow-x: scroll;
+    /* overflow: none, visible, hidden, scroll */
+}
+
