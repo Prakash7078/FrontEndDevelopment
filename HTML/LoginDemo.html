@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <style>
+        #frm{
+            margin:5% 50% 60% 30%;
+            border: 6px solid black;
+            padding: 10px;
+            padding-bottom: 20px;
+            overflow: hidden;
+
+        }
+        h1{
+            color: blue;
+        }
+        #btn{
+            background-color: blue;
+            color: white;
+        }
+        #lab{
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="frm">
+        <h1>Login Here</h1>
+        <label id="lab">Email:</label><br><br><input type="text" pattern="[@.]" placeholder="Email" required><br><br>
+        <label id="lab">Password:</label><br><br><input type="password"  placeholder="password"><br><br>
+        <input type="button" id="btn" value="Login">
+    </form>
+
+</body>
+</html>

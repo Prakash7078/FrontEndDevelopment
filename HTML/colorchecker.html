@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Colour checker</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Colour Checker Box</h2>
+    <div style="width: 200px; margin: auto;">
+        <canvas id="canvas" style="border: 2px solid black; width: 200px; height: 100px;">
+            Your browser does not support the canvas element.
+        </canvas>
+    </div>
+    <script>
+        var x = 0, y = 0;
+        const arr = [
+            ['blue','yellow','#33cc33','hotpink','coral','#00ffff','#006699','#ff3333','#0066ff','hotpink'],
+            ['#000','hotpink','#0066ff','#006699','#ff3333','#ff0000','#33cc33','hotpink','coral','#00ffff'],
+            ['#ff66a3','#990099','coral','#00ffff','#006699','#33cc33','hotpink','#ff3333','#ffff00','hotpink'],
+            ['#adebeb','#ffff00','#33cc33','hotpink','coral','#00ffff','#006699','#00264d','#0066ff','#66ccff'],
+            ['#009900','#ff0000','#33cc33','#ffffff','coral','#00ffff','#ff6633','#ff3333','#999900','hotpink']
+        ];
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        for(let i = 0; i < 5; i++) {
+            for (let index = 0; index < 10; index++) {
+                context.fillStyle = arr[i][index];
+                context.fillRect(x, y, 30, 30);
+                x = x+30;
+            }
+            y = y+30;
+            x = 0;
+        }
+    </script>
+</body>
+</html>
